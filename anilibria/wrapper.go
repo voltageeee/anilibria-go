@@ -399,6 +399,9 @@ func GetSchedule(filters []string, days []string) ([]Schedule, error) {
 	return result, nil
 }
 
+// anilibria.GetFranchises will return an array of FranchiseWrapper objects that contain
+// an array of Release objects and a Franchise object.
+// We get the franchise of the title by passing the title's ID to this function.
 func GetFranchises(filters []string, id int64) ([]FranchiseWrapper, error) {
 	var result []FranchiseWrapper
 
